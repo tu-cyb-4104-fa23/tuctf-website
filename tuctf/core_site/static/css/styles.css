@@ -4,6 +4,9 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            
+            margin-top: 25px;
+            margin-bottom: 15px;
         }
 
         /* Dark Mode Styling */
@@ -15,6 +18,11 @@
 
             background-color: #121212;
             color: #e0e0e0;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
 
         a {
@@ -39,12 +47,26 @@
 
         main {
             flex: 1; /* Allow the main content to grow and take up any available space */
-            display: flex; 
+            display: grid;
+            grid-auto-flow: row;
             justify-content: center;
             align-items: center;
             text-align: center; /* This centers inline or inline-block content like text */
     
             padding: 20px;
+        }
+
+        main ol {
+            
+            align-self: flex-start; /* For Flexbox. This will align the list to the start (left for LTR languages) */
+            text-align: left; /* Ensures text within the list is left-aligned */
+
+            padding-left: 20px; /* Adjusts space from the left */
+            list-style-type: decimal; /* This is the default style, but you can change to others like 'lower-alpha', 'upper-roman', etc. */
+        }
+        
+        main ol li {
+            margin-bottom: 10px; /* Adds some spacing between list items */
         }
 
         footer {
@@ -55,4 +77,5 @@
             position: absolute;
             bottom: 0;
             width: 100%;
+            box-sizing: border-box;
         }
