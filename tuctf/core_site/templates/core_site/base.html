@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUCTF</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    
+</head>
+
+<body>
+    <header>
+        TUCTF Cyber Competition
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- This is where content from child templates will be injected -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        © 2023 TUCTF. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

@@ -39,3 +39,7 @@ python manage.py createsuperuser
 ```
 
 - Commited: `Initial project setup`
+
+- Mapped main urls.py to core_site
+- Created `base.html`, `index.html`, and a basic `style.css` (inspo from ChatGPT)
+

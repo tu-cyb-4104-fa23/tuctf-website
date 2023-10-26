@@ -1,0 +1,58 @@
+
+        /* Basic Reset */
+        body, h1, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Dark Mode Styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            width: 100%; /* Ensure they span the entire width of the viewport */
+            box-sizing: border-box; /* This ensures padding and border are included in the total width/height */
+        
+            background-color: #1f1f1f;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+            border-bottom: 2px solid #003595;
+        }
+
+        main {
+            flex: 1; /* Allow the main content to grow and take up any available space */
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* This centers inline or inline-block content like text */
+    
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 10px 20px;
+            text-align: center;
+            border-top: 2px solid #003595;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
