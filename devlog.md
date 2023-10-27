@@ -43,3 +43,11 @@ python manage.py createsuperuser
 - Mapped main urls.py to core_site
 - Created `base.html`, `index.html`, and a basic `style.css` (inspo from ChatGPT)
 
+- Committed
+
+- Installed `django_bootstrap5`
+- Split out `tuctf_2023` from main page (but will make home for duration of comp)
+- Added `rules_2023`
+- Spent way too much time messing with CSS and adding dark mode toggle
+
+- Committed `CSS and Dark Mode Toggle`

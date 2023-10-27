@@ -1,0 +1,54 @@
+{% extends "core_site/base.html" %}
+
+
+{% block page_header %}
+  <div class="p-3 mb-4 border rounded-3">
+    <div class="container-fluid py-4">
+      <h1 class="display-3">Welcome to TUCTF 2023</h1>
+
+      <p class="lead">TUCTF is an annual Capture the Flag competition hosted by the CTF club at the University of Tulsa.</p>
+    
+      <p class="lead">The 2023 TUCTF Competition is a jeopardy-style CTF designed for a range of skill levels. It will start at 12:00pm CT on Friday, December 1, 2023 and run for 48 hours until 12:00pm CT on Sunday, December 3, 2023.</p>
+
+
+      <a class="btn btn-primary btn-lg mt-1"
+          {% comment %} href="{% url 'core_site:register' %}" {% endcomment %}
+          >Register &raquo;</a>
+        <a class="btn btn-secondary btn-lg mt-1"
+          {% comment %} href="{% url 'core_site:register' %}" {% endcomment %}
+          >Discord &raquo;</a>
+    </div>
+  </div>
+{% endblock page_header %}
+
+{% block content %}
+
+
+<div class="row">
+  <div class="col-md-6">
+    <h2>What is a CTF?</h2>
+    <p>A CTF is a competition where teams of hackers compete to solve challenges in categories such as web exploitation, reverse engineering, cryptography, and more.</p>
+    <p>CTFs are a great way to learn new skills and meet new people. TUCTF is beginner friendly, so don't be afraid to join!</p>
+  </div>
+  <div class="col-md-6">
+    <h2>What is TUCTF?</h2>
+    <p>TUCTF is an annual Capture the Flag competition hosted by the CTF club at the University of Tulsa.</p>
+    <p>Our goal is to provide a fun and educational experience for all participants, regardless of skill level.</p>
+  </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>How do I play?</h2>
+        <p>Register for the competition and join our Discord server. On the day of the competition, you will be given a link to the competition platform.</p>
+        <p>Once the competition starts, you will be able to view the challenges and submit flags to earn points.</p>
+    </div>
+    <div class="col-md-6">
+        <h2>What are the rules?</h2>
+        <p>Teams may have up to 5 members. You may not share flags or answers with other teams. You may not attack the competition infrastructure.</p>
+        <p>For a full list of rules, see the <a href="{% url 'core_site:rules_2023' %}">rules page</a>.</p>
+    </div>
+
+
+{% endblock content %}
